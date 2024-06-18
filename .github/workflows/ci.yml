@@ -2,12 +2,8 @@ name: CI
 
 on:
   push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
-
+    branches-ignore:
+      - main  # Exclude triggering on main branch if desired
 jobs:
   build:
     runs-on: ubuntu-latest
